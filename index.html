@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pranya Vangala</title>
+    <title>pranaya</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="font/css/font.css">
     <link href="css/Bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <style>
         /* Background and general styling */
         body {
-            background-color: #5d9ecf; /* Light blue background */
-            color: white;
+            background-color: #d0e7f1; /* Light blue background */
+            color: #333; /* Dark text color for readability */
             font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
@@ -26,7 +27,7 @@
 
         /* Header Styling */
         header {
-            background: rgba(0, 0, 0, 0.2);
+            background: #1c3b5a; /* Darker blue header */
             padding: 15px 0;
             position: fixed;
             width: 100%;
@@ -57,21 +58,28 @@
 
         #menu li a:hover {
             text-decoration: underline;
+            color: #66b3ff; /* Light blue hover effect */
         }
 
         /* Hero Section */
         .hero {
             margin-top: 100px;
+            padding: 40px;
+            background-color: #ffffff; /* White background for the hero section */
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             font-size: 3rem;
             font-weight: bold;
+            color: #1c3b5a; /* Darker blue text */
         }
 
         h2 {
             font-size: 1.5rem;
             font-weight: 300;
+            color: #666; /* Slightly lighter text for the subtitle */
         }
 
         /* Buttons */
@@ -82,31 +90,256 @@
         .button {
             display: inline-block;
             padding: 10px 20px;
-            border: 2px solid white;
+            border: 2px solid #1c3b5a;
             border-radius: 5px;
-            color: white;
+            color: #1c3b5a; /* Darker blue button text */
             text-decoration: none;
             font-size: 1rem;
             margin: 10px;
+            background-color: white; /* White background for buttons */
         }
 
         .button:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: #66b3ff; /* Light blue on hover */
+            color: white; /* White text on hover */
         }
+
+        /* Lead Section */
+        #lead {
+            background-color: #c2dff7; /* Light blue lead section */
+            padding: 50px 0;
+        }
+
+        #lead-content h1,
+        #lead-content h2 {
+            margin: 0;
+        }
+
+        #lead .btn-rounded-white {
+            padding: 10px 20px;
+            background-color: white;
+            color: #1c3b5a; /* Darker blue text for buttons */
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* About Section */
+        #about {
+        padding: 5rem 0;
+        background-color: #d0e7f1; /* Light blue background */
+        text-align: justify; /* Justify the text */
+        max-width: 800px; /* Optional: limits the width for better readability */
+        margin: 0 auto; /* Centers the content horizontally */
+            }
+
+        #about .heading {
+            text-align: center; /* Centers the heading */
+            font-size: 2rem; /* Optional: adjust the heading size */
+            font-weight: bold; /* Optional: makes the heading bold */
+            margin-bottom: 1rem; /* Adds space below the heading */
+        }
+
+        #about p {
+            margin: 0;
+            font-size: 1.1rem; /* Adjust font size if needed */
+            line-height: 1.6; /* Adds spacing between lines for better readability */
+        }
+
+
+        /* Experience Section */
+                #experience {
+            padding: 5rem 0;
+            background-color: #d0e7f1; /* Light blue background */
+            text-align: justify; /* Justify the text */
+            max-width: 800px; /* Optional: limits the width for better readability */
+            margin: 0 auto; /* Centers the content horizontally */
+        }
+
+        #experience .heading {
+            text-align: center; /* Centers the heading */
+            font-size: 2rem; /* Optional: adjust the heading size */
+            font-weight: bold; /* Optional: makes the heading bold */
+            margin-bottom: 1rem; /* Adds space below the heading */
+        }
+
+        #experience p {
+            margin: 0;
+            font-size: 1.1rem; /* Adjust font size if needed */
+            line-height: 1.6; /* Adds spacing between lines for better readability */
+        }
+
+
+
+        /* Heading */
+        #/* General Section Styling for Justified Text and Centered Heading */
+        section {
+            padding: 5rem 0;
+            background-color: #d0e7f1; /* Light blue background for all sections */
+            text-align: justify; /* Justify the text in the section */
+            max-width: 800px; /* Optional: limits the width for better readability */
+            margin: 0 auto; /* Centers the content horizontally */
+        }
+
+        /* Heading Styling for Centered Headings in All Sections */
+        section .heading {
+            text-align: center; /* Centers the heading */
+            font-size: 2rem; /* Optional: adjust the heading size */
+            font-weight: bold; /* Optional: makes the heading bold */
+            margin-bottom: 1rem; /* Adds space below the heading */
+        }
+
+        /* Paragraph Styling */
+        section p {
+            margin: 0;
+            font-size: 1.1rem; /* Adjust font size if needed */
+            line-height: 1.6; /* Adds spacing between lines for better readability */
+        }
+
+        /* Center the project container */
+        #projects .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Ensure each project block is centered */
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 80%; /* Adjust width for consistency */
+            max-width: 600px; /* Prevent overly wide project sections */
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Make images smaller and centered */
+        .project-image img {
+            width: 200px; /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Ensures images retain aspect ratio without distortion */
+            border-radius: 10px; /* Optional: adds rounded corners */
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Ensure text is justified */
+        .project-info {
+            text-align: justify;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        #skills {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .skill-box {
+            background-color: #1e3a8a; /* Dark Blue */
+            color: #ffffff;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.1);
+            background-color: #2563eb; /* Light Blue */
+        }
+
+                footer {
+            background-color: #1e3a8a; /* Dark Blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+
+       footer {
+    background-color: #f0f8ff;  /* Light Blue background */
+    padding: 10px 0;            /* Reduced padding for smaller size */
+    font-size: 14px;            /* Font size of text */
+    text-align: center;         /* Center the content */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social ul li a {
+    color: #333;               /* Dark color for icon */
+    font-size: 20px;            /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social ul li a:hover {
+    color: #007bff;             /* Light blue hover effect */
+}
+
+.copyright {
+    color: #555;               /* Light grey text */
+    margin-bottom: 5px;
+}
+
+
+
+
     </style>
 </head>
 <body>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
 
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
+
         <ul id="menu" class="shadow">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -117,130 +350,76 @@
     </header>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <h1>Pranya Vangala</h1>
-        <h2>(Software || Mobile) Developer && Tester</h2>
-
-        <div class="buttons">
-            <a href="#" class="button">Resume</a>
-            <a href="#" class="button">LinkedIn</a>
-            <a href="#" class="button">Email</a>
-        </div>
-    </div>
-
-</body>
-</html>
-
-
-    <div id="lead" style="background-color: rgba(230, 213, 213, 0.751);">
-        <div id="lead-content">
-
-
-
-                       <h1>Pranya vangala</h1>
-            <h2>( software || Mobile) Developer && Tester</h3>
-            <a href="images/Pranya-Java Full Satck Engineer-Resume.docx" class="btn-rounded-white" target="_blank">  Resume  </a>
-
-            <a href='mailTo:pranya9645@gmail.com' class="btn-rounded-white" >
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>
-                
-
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about" class="py-5 bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Column for Heading -->
-            <div class="col-md-4">
-                <h2 class="heading pb-2 border-bottom border-primary">About Me</h2>
-            </div>
-
-            <!-- Right Column for Content -->
-            <div class="col-md-8">
-                <p>
-                    I am a passionate <strong>Java Full Stack Developer</strong> with a proven track record of transforming complex ideas
-                    into scalable, high-performance solutions. With expertise in <strong>Spring Boot</strong>, <strong>React.js</strong>,
-                    <strong>Node.js</strong>, <strong>AWS</strong>, and <strong>DevOps tools</strong>, I have designed and deployed
-                    cutting-edge applications that drive efficiency, enhance security, and deliver seamless user experiences.
-                </p>
-
-                <p>
-                    From crafting dynamic user interfaces to building resilient <strong>microservices architectures</strong>, I thrive
-                    at the intersection of creativity and engineering. My work has led to <strong>40% faster deployments</strong>,
-                    <strong>30% optimized API performance</strong>, and <strong>99.99% application uptime</strong>, reflecting my focus
-                    on innovation and measurable impact.
-                </p>
-
-                <p>
-                    I enjoy tackling challenging problems with modern technologies like <strong>Terraform</strong>, <strong>Jenkins</strong>,
-                    and <strong>Docker</strong>, and securing applications with <strong>OAuth2</strong>, <strong>JWT</strong>, and
-                    <strong>advanced encryption protocols</strong>. Whether improving customer satisfaction in banking or building
-                    enterprise-grade systems, I am fueled by a passion for learning, collaboration, and creating solutions that matter.
-                </p>
-
-                <p class="font-weight-bold text-primary">Let’s build something amazing together!</p>
-            </div>
-        </div>
+  <div class="hero">
+    <h1>Pranaya Vangala</h1>
+    <h2>Software Developer && Tester</h2>
+    <div class="buttons">
+        <!-- Resume PDF link -->
+        <a href="images/resume.pdf" class="button" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/pranya-v-456576358/" class="button" target="_blank">LinkedIn</a>
+        <a href="mailto:pranya9645@gmail.com" class="button">Email</a>
     </div>
 </div>
 
-    <!-- End #about -->
 
+
+    <!-- About Section -->
+    <div id="about" class="py-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h2 class="heading pb-2 border-bottom border-primary">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am a passionate <strong>Java Full Stack Developer</strong> with a proven track record of transforming complex ideas
+                        into scalable, high-performance solutions. With expertise in <strong>Spring Boot</strong>, <strong>React.js</strong>,
+                        <strong>Node.js</strong>, <strong>AWS</strong>, and <strong>DevOps tools</strong>, I have designed and deployed
+                        cutting-edge applications that drive efficiency, enhance security, and deliver seamless user experiences.
+                    </p>
+                    <p>
+                        From crafting dynamic user interfaces to building resilient <strong>microservices architectures</strong>, I thrive
+                        at the intersection of creativity and engineering. My work has led to <strong>40% faster deployments</strong>,
+                        <strong>30% optimized API performance</strong>, and <strong>99.99% application uptime</strong>, reflecting my focus
+                        on innovation and measurable impact.
+                    </p>
+                    <p>
+                        I enjoy tackling challenging problems with modern technologies like <strong>Terraform</strong>, <strong>Jenkins</strong>,
+                        and <strong>Docker</strong>, and securing applications with <strong>OAuth2</strong>, <strong>JWT</strong>, and
+                        <strong>advanced encryption protocols</strong>. Whether improving customer satisfaction in banking or building
+                        enterprise-grade systems, I am fueled by a passion for learning, collaboration, and creating solutions that matter.
+                    </p>
+                    <p class="font-weight-bold text-primary">Let’s build something amazing together!</p>
+                </div>
+
+
+    <!-- Experience Section -->
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-
             <div data-date="Sep 2023 – present">
                 <h3>Cargill</h3>
                 <h4>Software Development Engineer</h4>
-                <p>
-                    <ul>
-                        <li>
-                            Designed and implemented <strong>end-to-end microservices architecture</strong> using <strong>Spring Boot</strong> and 
-                            <strong>RESTful APIs</strong>, ensuring scalability and modularity for core business functionalities.
-                        </li>
-                        <li>
-                            Improved deployment efficiency by <strong>20%</strong> by streamlining <strong>CI/CD pipelines</strong> with 
-                            <strong>Jenkins</strong> and integrating automated testing frameworks like <strong>JUnit</strong> and <strong>Mockito</strong>.
-                        </li>
-                        <li>
-                            Automated cloud infrastructure provisioning using <strong>Terraform</strong>, deploying <strong>AWS resources</strong> 
-                            (EC2, S3, RDS), and reducing manual intervention by <strong>25%</strong>.
-                        </li>
-                        <li>
-                            Configured <strong>AWS CloudWatch</strong> for real-time monitoring and alerting, reducing incident resolution time by <strong>30%</strong>.
-                        </li>
-                        <li>
-                            Developed dynamic user interfaces with <strong>React.js</strong> and <strong>Redux</strong>, improving frontend performance 
-                            by <strong>15%</strong>, reducing client-side latency, and securing API integrations with <strong>OAuth2</strong> and encryption protocols.
-                        </li>
-                        <li>
-                            Conducted performance tuning of backend processes and <strong>MySQL queries</strong>, achieving a <strong>15% reduction</strong> 
-                            in query execution times.
-                        </li>
-                        <li>
-                            Collaborated cross-functionally to ensure seamless integration between frontend and backend components, delivering 
-                            projects within timelines and with zero critical bugs.
-                        </li>
-                    </ul>
-                    
-                    </p>
+                <ul>
+                    <li>Designed and implemented <strong>end-to-end microservices architecture</strong> using <strong>Spring Boot</strong> and
+                        <strong>RESTful APIs</strong>, ensuring scalability and modularity for core business functionalities.
+                    </li>
+                    <li>Improved deployment efficiency by <strong>20%</strong> by streamlining <strong>CI/CD pipelines</strong> with
+                        <strong>Jenkins</strong> and integrating automated testing frameworks like <strong>JUnit</strong> and <strong>Mockito</strong>.
+                    </li>
+                    <li>Automated cloud infrastructure provisioning using <strong>Terraform</strong>, deploying <strong>AWS resources</strong>
+                        (EC2, S3, RDS), and reducing manual intervention by <strong>25%</strong>.
+                    </li>
+                    <li>Configured <strong>AWS CloudWatch</strong> for real-time monitoring and alerting, reducing incident resolution time by
+                        <strong>30%</strong>.
+                    </li>
+                    <li>Developed dynamic user interfaces with <strong>React.js</strong> and <strong>Redux</strong>, improving frontend performance
+                        by <strong>15%</strong>, reducing client-side latency, and securing API integrations with <strong>OAuth2</strong> and encryption protocols.
+                    </li>
+                    <li>Conducted performance tuning of backend processes and <strong>MySQL queries</strong>, achieving a <strong>15% reduction</strong>
+                    </li>
+                </ul>
             </div>
-
-
             <div data-date="September 2021 – August 2023">
                 <h3>TCS India</h3>
                 <h4> Application Developer</h4>
@@ -255,65 +434,63 @@
                         <li>Conducted system profiling with <strong>Chrome DevTools</strong> and <strong>Postman</strong>, optimizing middleware latency by <strong>10%</strong> and reducing SQL query execution times by <strong>15%</strong>.</li>
                         <li>Automated <strong>CI/CD pipelines</strong> with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, integrating <strong>SonarQube</strong> for static code analysis and <strong>Docker</strong> for containerized deployments, cutting deployment times by <strong>20%</strong>.</li>
                     </ul>
-                    
+
                     </p>
             </div>
 
-            
+
             <div data-date="January 2019 – August 2021">
                 <h3>Medisys Edu Tech pvt ltd</h3>
-                <h4>software engineer</h4>
+                <h4>Software engineer</h4>
                 <p>
                     <ul>
                         <li>
-                            Developed a secure online banking platform using <strong>Spring Boot</strong> and <strong>React.js</strong>, achieving a 
-                            <strong>95% reduction</strong> in unauthorized access incidents with <strong>Role-Based Access Control (RBAC)</strong> and 
+                            Developed a secure online banking platform using <strong>Spring Boot</strong> and <strong>React.js</strong>, achieving a
+                            <strong>95% reduction</strong> in unauthorized access incidents with <strong>Role-Based Access Control (RBAC)</strong> and
                             <strong>JWT-based authentication</strong>.
                         </li>
                         <li>
-                            Optimized API response times by <strong>30%</strong> by designing and implementing <strong>RESTful APIs</strong> using 
+                            Optimized API response times by <strong>30%</strong> by designing and implementing <strong>RESTful APIs</strong> using
                             <strong>Spring Boot</strong> and integrating <strong>Swagger</strong> for documentation and testing.
                         </li>
                         <li>
-                            Integrated the bank’s core banking system through secure <strong>REST APIs</strong>, improving real-time transaction processing 
+                            Integrated the bank’s core banking system through secure <strong>REST APIs</strong>, improving real-time transaction processing
                             speed by <strong>40%</strong> and enhancing customer satisfaction.
                         </li>
                         <li>
-                            Enhanced database query performance by <strong>25%</strong> through optimized indexing, use of <strong>Hibernate caching</strong>, 
+                            Enhanced database query performance by <strong>25%</strong> through optimized indexing, use of <strong>Hibernate caching</strong>,
                             and stored procedures in <strong>MySQL</strong> hosted on <strong>AWS RDS</strong>.
                         </li>
                         <li>
-                            Built and deployed a containerized <strong>microservices architecture</strong> using <strong>Docker</strong> and implemented 
+                            Built and deployed a containerized <strong>microservices architecture</strong> using <strong>Docker</strong> and implemented
                             <strong>CI/CD pipelines</strong> with <strong>Jenkins</strong>, reducing deployment time by <strong>40%</strong>.
                         </li>
                         <li>
-                            Improved application availability to <strong>99.99% uptime</strong> by leveraging <strong>AWS EC2</strong>, <strong>S3</strong>, 
+                            Improved application availability to <strong>99.99% uptime</strong> by leveraging <strong>AWS EC2</strong>, <strong>S3</strong>,
                             and <strong>CloudWatch</strong> for hosting, monitoring, and scaling the application.
                         </li>
                         <li>
-                            Implemented advanced security measures such as <strong>AES-256 encryption</strong>, <strong>SSL/TLS protocols</strong>, and 
-                            regular vulnerability scanning using <strong>Nessus</strong>, ensuring compliance with <strong>ISO 27001</strong> and 
+                            Implemented advanced security measures such as <strong>AES-256 encryption</strong>, <strong>SSL/TLS protocols</strong>, and
+                            regular vulnerability scanning using <strong>Nessus</strong>, ensuring compliance with <strong>ISO 27001</strong> and
                             <strong>PCI DSS standards</strong>.
                         </li>
                     </ul>
-                    
+
                 </p>
             </div>
-           
-        </div>
-    </div>
+
     <!-- End #experience -->
 
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>Jawaharlal Nehru Technological University</h3>
+            <h3>Master of Technology in Data Sciences</h3>
             <span class="education-date"> 2019 - 2021</span>
-            <h4>Master of Technology in Data Sciences</h4>
+            <h4>Jawaharlal Nehru Technological University</h4>
 
             <p>
-                <h4><b>Coursework </b>: Advanced Algorithms, Advanced AI, Advanced Topics in Programming Languages, software maintenance
-                    reengineering and reuse, advanced software engineering.</h4>
+                <h5>Coursework : Advanced Algorithms, Advanced AI, Advanced Topics in Programming Languages, software maintenance
+                    reengineering and reuse, advanced software engineering.</h5>
 
 
             </p>
@@ -321,14 +498,13 @@
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>Jawaharlal Nehru Technological University </h3>
+            <h3>Bachelor of Science in Computer Science </h3>
             <span class="education-date">2014 - Sept 2018</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+            <h4>Jawaharlal Nehru Technological University</h4>
 
-
-            <h4><b>Coursework </b>: Design and analysis of Data Structures and Algorithms, Graph Theory and Combinatorics, Compiler
+            <h5>Coursework : Design and analysis of Data Structures and Algorithms, Graph Theory and Combinatorics, Compiler
 Design, Operating Systems, Computer Networks, Object Oriented Programming through JAVA, Software Architecture,
-Artificial Intelligence, Introduction to Python.</h4>
+Artificial Intelligence, Introduction to Python.</h5>
         </div>
         <!-- End .education-block -->
     </div>
@@ -340,7 +516,7 @@ Artificial Intelligence, Introduction to Python.</h4>
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpeg" />
+                        <img src="/images/blogpost.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -355,7 +531,7 @@ Artificial Intelligence, Introduction to Python.</h4>
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpeg" />
+                        <img src="images/Ecommerce.jpeg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
@@ -369,13 +545,13 @@ Artificial Intelligence, Introduction to Python.</h4>
                 <!-- End .project -->
                 <div class="project shadow-large">
                     <div class="project-image">
-                         <img src="static/images/teacher1.jpeg" alt="Faculty Member 1">
+                         <img src="images/weather.png">
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>React personal portfolio</h3>
+                        <h3>Weather_Data_Report</h3>
                         <p>
-                            Implemented interactive React Personal Portfolio, which is a dynamic and responsive web application built using the React JavaScript library. This project serves as a central hub to showcase my professional experience, skills, and projects in an engaging and interactive manner.                        </p>
+                            The Weather Data Report project analyzes real-time and historical weather data to provide insights on temperature, humidity, precipitation, and trends. It helps in forecasting, decision-making, and climate pattern analysis using data visualization and analytics.
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -391,96 +567,76 @@ Artificial Intelligence, Introduction to Python.</h4>
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpeg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Automated Cover Letter and Resume Generator</h3>
-                        <p>
-                            Developed a web application using React JS and ChatGPT API to create personalized cover letters and
-                            resumes by extracting user-provided LinkedIn profiles, data and leveraging ChatGPT's NLP capabilities.(ReactJs,openAPI,Redux,MongoDB)  </p>
-                                          </div>
-                    <!-- End .project-info -->
-                </div>
-            </div>
         </div>
     </div>
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Confluence</li>
-            <li>GitHub</li>
-            <li>bootstrap</li>
-            <li>Agile</li>
-            <li>REST</li>
+    <h2 class="heading">Skills</h2>
+    <div class="skills-container">
+        <span class="skill-box">Java</span>
+        <span class="skill-box">Python</span>
+        <span class="skill-box">HTML</span>
+        <span class="skill-box">CSS</span>
+        <span class="skill-box">Node.js</span>
+        <span class="skill-box">AngularJs</span>
+        <span class="skill-box">React</span>
+        <span class="skill-box">Confluence</span>
+        <span class="skill-box">GitHub</span>
+        <span class="skill-box">Bootstrap</span>
+        <span class="skill-box">Agile</span>
+        <span class="skill-box">REST</span>
+        <span class="skill-box">Express.Js</span>
+        <span class="skill-box">Kubernetes</span>
+        <span class="skill-box">Jenkins</span>
+        <span class="skill-box">Terraform</span>
+        <span class="skill-box">JUnit</span>
+        <span class="skill-box">Mockito</span>
+        <span class="skill-box">Selenium</span>
+        <span class="skill-box">Cucumber</span>
+        <span class="skill-box">Postman</span>
+        <span class="skill-box">Maven</span>
+        <span class="skill-box">JIRA</span>
+        <span class="skill-box">Trello</span>
+        <span class="skill-box">MongoDB</span>
+        <span class="skill-box">Git</span>
+        <span class="skill-box">Bitbucket</span>
+        <span class="skill-box">Scrum</span>
+        <span class="skill-box">Jest</span>
+        <span class="skill-box">SQL</span>
+        <span class="skill-box">RealmJS</span>
+        <span class="skill-box">C</span>
+        <span class="skill-box">C#</span>
+        <span class="skill-box">C++</span>
+        <span class="skill-box">JavaScript</span>
+        <span class="skill-box">React Native</span>
 
-            <li>Express.Js</li>
-            <li>Kubernetes</li>
-            <li>Jenkins</li>
-            <li>Terraform</li>
-            <li>JUnit</li>
-
-            <li>Mockito</li>
-            <li>Selenium</li>
-            <li>Cucumber</li>
-            <li>Postman</li>
-            <li>Maven</li>
-            <li>JIRA</li>
-            <li>Trello</li>
-            <li>MongoDB</li>
-
-            <li>git</li>
-
-            <li>Bitbucket</li>
-            <li>Scrum</li>
-            <li>Jest</li>
-            <li>SQL</li>
-            <li>RealmJS</li>
-
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>JavaScript</li>
-            <li>React Native</li>
-            <li>Java</li>
-        </ul>
     </div>
-    <!-- End #skills -->
+</div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        developed by  Pranya vangala
-                    </p>
-                </div>
-            
-                <div class="col-sm-5 social">
-                    <ul>
+<footer>
+    <div class="footer-container">
+        <p class="copyright">Developed by <b>pranaya</b></p>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="mailto:pranya9645@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-                        <li>
-                            <a href='mailTo:pranya9645@gmail.com' target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+<!-- External Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+    </div>
+        </div>
+    </div>
             </div>
         </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    </div>
 </body>
-
 </html>
